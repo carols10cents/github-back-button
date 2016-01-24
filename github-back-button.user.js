@@ -11,3 +11,7 @@
 // ==/UserScript==
 
 $(".js-pull-request-tab").removeClass("js-pull-request-tab");
+
+$(window).on('pjax:end', function(e) {
+  $(".js-pull-request-tab").removeClass("js-pull-request-tab");
+});
